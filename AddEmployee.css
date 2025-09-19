@@ -1,0 +1,50 @@
+.modal-header{
+background-color: rgb(192, 207, 228);
+
+}
+
+/* Custom styles for the dropdown */
+.custom-dropdown {
+    max-height: 100px;   /* Set max height for dropdown */
+    overflow-y: 100px;     /* Add scroll if content exceeds height */
+    padding: 5px;         /* Optional: adds a bit of padding inside the dropdown */
+  }
+
+  .checkbox-style {
+    width: 20px; /* Width of the checkbox */
+    height: 20px; /* Height of the checkbox */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .checkbox-style:checked {
+    background-color: #4caf50; /* Green background when checked */
+    border-color: #4caf50;
+  }
+  
+  .checkbox-style:checked + .form-check-label {
+    font-weight: bold;
+    color: #4caf50; /* Green text color when checked */
+  }
+  
+  .checkbox-style:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.5); /* Green glow when focused */
+  }
+  
+  .form-check-label {
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .form-check-inline {
+    margin-right: 15px; /* Adds space between checkboxes */
+  }
+  
+
+  
+  

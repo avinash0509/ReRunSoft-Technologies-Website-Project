@@ -1,0 +1,109 @@
+/* Make the table responsive for smaller screens (adds horizontal scroll if needed) */
+.table-responsive {
+    overflow: hidden;
+    overflow-y: auto;  /* Enables horizontal scrolling if necessary */
+   /* Ensures smooth scrolling on mobile devices */
+  }
+  
+  /* Optional: You can reduce padding and adjust column widths to fit */
+  .table th, .table td {
+    padding: 5px 10px;  /* Reduced padding */
+  
+  }
+  
+  /* Optional: Adjust table width for each column to make it more compact */
+  .table th:nth-child(1), .table td:nth-child(1) {
+    width: 80px;  /* Adjust column width for Employee Id */
+    text-align: right !important; 
+  }
+  
+  .table th:nth-child(2), .table td:nth-child(2) {
+    width: 150px;  /* Adjust column width for First Name */
+  }
+  
+  .table th:nth-child(3), .table td:nth-child(3) {
+    width: 150px;  /* Adjust column width for Last Name */
+  }
+  
+  .table th:nth-child(4), .table td:nth-child(4),
+  .table th:nth-child(5), .table td:nth-child(5),
+  .table th:nth-child(6), .table td:nth-child(6) {
+    width: 120px;  /* Adjust column widths for Address fields */
+  }
+  
+  .table th:nth-child(7), .table td:nth-child(7) {
+    width: 100px;  /* Adjust column width for State */
+  }
+  
+  .table th:nth-child(8), .table td:nth-child(8) {
+    width: 100px;  /* Adjust column width for District */
+  }
+  
+  .table th:nth-child(9), .table td:nth-child(9) {
+    width: 100px;  /* Adjust column width for City */
+  }
+  
+  .table th:nth-child(10), .table td:nth-child(10) {
+    width: 100px;  /* Adjust column width for Pincode */
+    text-align: right !important; 
+  }
+  
+  .table th:nth-child(11), .table td:nth-child(11) {
+    width: 120px;  /* Adjust column width for Joining Date */
+  }
+  
+  .table th:nth-child(12), .table td:nth-child(12) {
+    width: 80px;  /* Adjust column width for Gender */
+  }
+  
+  .table th:nth-child(13), .table td:nth-child(13) {
+    width: 150px;  /* Adjust column width for Actions */
+  }
+  
+  /* Optional: Add hover effect for table rows */
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  /* Optional: If the table is too wide or causing issues, set max-width */
+.table-responsive {
+    max-width: 100%;
+    overflow-x: auto;  /* Scroll if needed */
+  }
+  
+  /* Optional: Add spacing for a cleaner layout */
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* Optional: Adjust the header of the table for better display */
+  .table th {
+    white-space: nowrap;  /* Prevent wrapping of table headers */
+    font-size: 14px;
+  }
+  
+  .table td, .table th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+  
+  }
+
+  .table td {
+    white-space: nowrap;
+    font-size: 13px;
+
+  }
+
+  .table th, .table td {
+    text-align: left !important;  /* Forces left alignment */
+}
+  
+  
+
+  
+
+
+  
+  

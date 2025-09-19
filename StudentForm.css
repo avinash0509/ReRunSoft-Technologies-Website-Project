@@ -1,0 +1,254 @@
+/* Custom button spacing class */
+.custom-btn-spacing {
+  margin-right: 30px; /* Add more margin between buttons */
+}
+
+/* Styling for Student Form Container */
+.student-form-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 600px; /* Limit the width on larger screens */
+}
+
+/* Styling for Student List Container */
+.student-list-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Limit width for larger screens */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Table Styling */
+.table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%; /* Ensure table takes full width */
+}
+
+/* Style for Table Header */
+.table thead {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.table thead th {
+  background-color: rgb(78, 73, 73);
+  color: white;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.table tbody td {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row colors */
+}
+
+.table tbody tr:hover {
+  background-color: #e9ecef; /* Hover effect on rows */
+  cursor: pointer;
+}
+
+.table tbody td button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 2px;
+  font-size: 14px;
+}
+
+.table tbody td button:hover {
+  opacity: 0.8;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+}
+
+/* Styling for the Action Buttons */
+.table .btn {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+.table .btn-primary {
+  background-color: hwb(189 4% 13%);
+  color: #fff;
+  border: none;
+}
+
+.table .btn-info {
+  background-color: hwb(221 30% 23%);
+  color: #fff;
+  border: none;
+}
+
+.table .btn-info:hover {
+  background-color: hwb(221 30% 23%);
+}
+
+.alert {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.modal-footer button {
+  width: 100%;
+}
+
+.modal-body p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Overlay Styling */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.successMessage {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 300px;
+}
+
+.successMessage button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: white;
+  color: #4caf50;
+  border: none;
+  border-radius: 5px;
+}
+
+.successMessage button:hover {
+  background-color: #45a049;
+}
+
+.confirmationMessage {
+  background-color: #f8f9fa;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 300px;
+}
+
+.confirmationMessage button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #417fcf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.confirmationMessage button:hover {
+  background-color: #0056b3;
+}
+
+/* Radio Button Styling */
+.radio-group {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.radio-group input {
+  margin-right: 10px;
+}
+
+/* Responsive Styles */
+
+/* For smaller screens (mobile and tablets) */
+@media (max-width: 768px) {
+  /* Student Form Container */
+  .student-form-container {
+    width: 90%; /* Make form take 90% width */
+  }
+
+  /* Student List Container */
+  .student-list-container {
+    width: 90%; /* Adjust list container width */
+  }
+
+  /* Table styling */
+  .table {
+    width: 100%;
+    font-size: 14px; /* Make table text smaller */
+  }
+
+  /* Table header and cells */
+  .table th,
+  .table td {
+    padding: 8px 10px;
+  }
+
+  /* Adjust button size for mobile */
+  .table .btn {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  /* Adjust overlay message and button for mobile */
+  .successMessage,
+  .confirmationMessage {
+    width: 80%; /* Make confirmation and success messages smaller */
+  }
+
+  /* Student Form Heading */
+  .student-form-container h2 {
+    font-size: 20px; /* Smaller heading for mobile */
+  }
+
+  /* Success and Confirmation Messages */
+  .confirmationMessage button,
+  .successMessage button {
+    font-size: 14px;
+  }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 769px) {
+  /* Student Form Container */
+  .student-form-container {
+    width: 60%; /* Form is larger on desktop */
+  }
+
+  /* Student List Container */
+  .student-list-container {
+    width: 80%; /* List container is wider */
+  }
+
+  /* Table */
+  .table {
+    width: 100%;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,67 @@
+.App {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .form-container {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    
+  }
+  
+  .form-group label {
+    width: 120px; /* Set a fixed width for label */
+    margin-right: 12px; /* Space between label and input */
+    text-align: right;
+  
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-container button {
+    padding: 10px 20px;
+    background-color: rgb(24, 158, 235);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+  }
+  
+  .form-container button:hover {
+    background-color: #45a049;
+    
+  }
+  
+  .total-salary {
+    margin-top: 20px;
+  }
+  
+  .form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .form-group label {
+  flex: 200px; /* Set a fixed width for the labels */
+ 
+}

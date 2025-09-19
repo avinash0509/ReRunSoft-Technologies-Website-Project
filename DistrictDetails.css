@@ -1,0 +1,253 @@
+/* Custom button spacing class */
+.custom-btn-spacing {
+  margin-right: 30px; /* Add more margin between buttons */
+}
+
+/* Styling for District Form Container */
+.district-form-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 600px; /* Limit the width on larger screens */
+}
+
+/* Styling for District List Container */
+.district-list-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px; /* Limit width for larger screens */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%; /* Ensure table takes full width */
+}
+
+/* Style for Table Header */
+.table thead {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.table thead th {
+  background-color: rgb(78, 73, 73);
+  color: white;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.table tbody td {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;  /* Alternate row colors */
+}
+
+.table tbody tr:hover {
+  background-color: #e9ecef;  /* Hover effect on rows */
+  cursor: pointer;
+}
+
+.table tbody td button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 2px;
+  font-size: 14px;
+}
+
+.table tbody td button:hover {
+  opacity: 0.8;
+}
+
+.table td, .table th {
+  border: 1px solid #ddd;
+}
+
+/* Styling for the Action Buttons */
+.table .btn {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+.table .btn-primary {
+  background-color: hwb(189 4% 13%);
+  color: #fff;
+  border: none;
+}
+
+.table .btn-info {
+  background-color: hwb(221 30% 23%);
+  color: #fff;
+  border: none;
+}
+
+.table .btn-info:hover {
+  background-color: hwb(221 30% 23%);
+}
+
+/* Alert Styles */
+.alert {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Modal Footer */
+.modal-footer button {
+  width: 100%;
+}
+
+/* Modal Body */
+.modal-body p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Overlay Styling */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Success Message Styling */
+.successMessage {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 300px;
+}
+
+.successMessage button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: white;
+  color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+}
+
+.successMessage button:hover {
+  background-color: #45a049;
+}
+
+/* Confirmation Message Styling */
+.confirmationMessage {
+  background-color: #f8f9fa;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 300px;
+}
+
+.confirmationMessage button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #417fcf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.confirmationMessage button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+
+/* For smaller screens (mobile and tablets) */
+@media (max-width: 768px) {
+
+  /* District Form Container */
+  .district-form-container {
+    width: 90%; /* Make form take 90% width */
+  }
+
+  /* District List Container */
+  .district-list-container {
+    width: 90%; /* Adjust list container width */
+  }
+
+  /* Table container (enable horizontal scrolling on small screens) */
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Table styling */
+  .table {
+    width: 100%;
+    font-size: 14px; /* Make table text smaller */
+  }
+
+  /* Table header and cells */
+  .table th, .table td {
+    padding: 8px 10px;
+  }
+
+  /* Adjust button size for mobile */
+  .table .btn {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  /* Adjust overlay message and button for mobile */
+  .successMessage, .confirmationMessage {
+    width: 80%; /* Make confirmation and success messages smaller */
+  }
+
+  /* District Form Heading */
+  .district-form-container h2 {
+    font-size: 20px; /* Smaller heading for mobile */
+  }
+
+  /* Success and Confirmation Messages */
+  .confirmationMessage button,
+  .successMessage button {
+    font-size: 14px;
+  }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 769px) {
+
+  /* District Form Container */
+  .district-form-container {
+    width: 60%; /* Form is larger on desktop */
+  }
+
+  /* District List Container */
+  .district-list-container {
+    width: 80%; /* List container is wider */
+  }
+
+  /* Table */
+  .table {
+    width: 100%;
+    font-size: 16px;
+  }
+
+}
